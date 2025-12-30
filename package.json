@@ -1,6 +1,7 @@
 {
-  "name": "nguyễn-thị-quỳnh-trang---business-analyst-portfolio",
+  "name": "business-analyst-portfolio",
   "private": true,
+  "homepage": ".",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
