@@ -1,7 +1,3 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
 # Business Analyst Portfolio - Nguyễn Thị Quỳnh Trang
 
 Chuyên gia Phân tích nghiệp vụ với kinh nghiệm triển khai các hệ thống ERP (Odoo), DMS và các giải pháp SaaS cho đa dạng lĩnh vực từ Kỹ thuật động cơ, Chế biến thủy sản đến Thiết bị công nghệ.
