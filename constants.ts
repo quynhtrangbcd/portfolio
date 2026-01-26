@@ -3,80 +3,72 @@ import { ExperienceItem, ProjectItem, SkillItem, TestimonialItem } from './types
 export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/nguyen-thi-quynh-trang-69bb46160/",
   email: "quynhtrang.bcd@gmail.com",
-  github: "#" // Not provided in CV
+  github: "#",
+  certification: "https://edu.google.accredible.com/bb045c47-bd5f-4611-8f63-e87049a79a6a#acc.5eXs6RVZ"
 };
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
   {
     id: '1',
     role: "Business Analyst",
-    company: "VIMID (Project AOT)",
-    period: "10/2024 - Present",
-    description: "Developing Odoo ERP enterprise management software for Engine Technology sector to optimize management time and support report generation.",
+    company: "AI Camera System (MBBank/Office)",
+    period: "11/2025 - Present",
+    description: "Developing AI Camera system featuring Face Recognition (FaceID) and License Plate Recognition (LPR) integrated with automated barrier gates for seamless access control.",
     achievements: [
-      "Gathered and analyzed solutions based on customer requirements for the automotive industry.",
-      "Finalized solutions and documented them in the Business Blueprint Document (BBD).",
-      "Continuously learned specialized business processes in engine technology."
+      "Analyzed requirements regarding accuracy threshold and recognition speed of AI models under various lighting conditions.",
+      "Designed specialized Test Cases for AI: testing against spoofing attacks, different facial angles, and weather conditions.",
+      "Implemented Multi-Factor Authentication (Face + Fingerprint/Card) and configured door sensor logic for authorized personnel.",
+      "Built multi-layer security system for Bank Vaults integrating FaceID AI Cameras with Door Sensors."
     ]
   },
   {
     id: '2',
     role: "Business Analyst",
-    company: "Haca Seafood",
-    period: "09/2024 - Present",
-    description: "Implementing Odoo ERP for a Seafood Processing & Export company to improve work efficiency and compliance with Circular 200.",
+    company: "BA Workflow Optimization with Gen AI",
+    period: "11/2025 - Present",
+    description: "Internal project aiming to standardize workflows and automate technical documentation processes for the Product team.",
     achievements: [
-      "Conducted detailed business analysis and transitioned requirements into the development phase.",
-      "Wrote test scenarios and performed testing after development completion.",
-      "Supported end-users in warehousing, production, accounting, and payroll processes."
+      "Developed standardized Prompt Library to automatically convert Meeting Minutes into detailed SRS, BRD, User Stories and Acceptance Criteria.",
+      "Leveraged Gen AI to generate Mock Data covering comprehensive edge cases for UAT process.",
+      "Reduced SRS documentation time by 40%, enabling early requirement handover to Development team."
     ]
   },
   {
     id: '3',
     role: "Business Analyst",
-    company: "QD.Tek",
-    period: "09/2023 - Present",
-    description: "Managed Odoo ERP implementation for a Technology Equipment Trading company.",
+    company: "Accounting & Warehouse Data Entry Automation",
+    period: "07/2025 - 11/2025",
+    description: "Solved data synchronization issues across two disparate systems lacking centralized Master Data, where product names on vendor invoices differed from internal records.",
     achievements: [
-      "Documented requirements in the Business Blueprint Document (BBD).",
-      "Guided end-users on purchasing, warehousing, and accounting modules.",
-      "Aligned system outputs with tax and accounting standards (TT200)."
+      "Engineered Intelligent Fuzzy Matching Algorithm to map unstructured vendor product names to internal SKUs based on text similarity.",
+      "Designed automated workflow: auto-select existing product code when match found, auto-generate new code when no match.",
+      "Orchestrated financial data flow: auto-captured Price & Tax from invoices to generate accounting entries after Warehouse verification.",
+      "Optimized operational workload by 70%, eliminating manual data entry bottlenecks."
     ]
   },
   {
     id: '4',
     role: "Business Analyst",
-    company: "HaMo Group",
-    period: "10/2022 - 06/2023",
-    description: "Developed Odoo ERP software for the Beauty Care Technology sector.",
+    company: "CMC In-house Core ERP System",
+    period: "04/2025 - 03/2026",
+    description: "Built comprehensive in-house ERP system from scratch to replace fragmented legacy software, addressing specific business challenges.",
     achievements: [
-      "Created Business Requirement Documents (BRD) and conducted detailed analysis.",
-      "Organized step-by-step training workshops to overcome employee resistance to new ERP systems.",
-      "Successfully connected sales, inventory, accounting, HR, and manufacturing modules."
+      "Analyzed cross-functional data flows between Business Department and Project Management teams to design Database Schema.",
+      "Integrated Gen AI APIs to automatically summarize support tickets and suggest response templates for CS department.",
+      "Increased order processing speed by 30% by eliminating redundant manual data entry."
     ]
   },
   {
     id: '5',
     role: "Business Analyst",
-    company: "Viettel (vESS Project)",
-    period: "06/2022 - 06/2023",
-    description: "Developed enterprise management software (vESS) for SMEs in compliance with Circular 88 and Circular 200.",
+    company: "Odoo ERP Implementation Projects",
+    period: "01/2022 - 03/2025",
+    description: "Led multiple Odoo ERP implementations for Manufacturing & Trading companies including Haca Seafood (Processing), AOT (Automotive), QD.Tek (Tech Trading), and HaMo (Spa Chain).",
     achievements: [
-      "Documented solutions in the Software Requirement Specification (SRS).",
-      "Created user manuals and conducted testing for the Digital Business Platform.",
-      "Reduced manual work and human errors by integrating sales, inventory, and accounting."
-    ]
-  },
-  {
-    id: '6',
-    role: "Tester and BA",
-    company: "Luong Quoi Coconut",
-    period: "02/2022 - 05/2022",
-    description: "Worked on the DMS (Distribution Management System) to optimize sales processes for branches and distributors.",
-    achievements: [
-      "Wrote test scenarios for web and app functions; executed system testing.",
-      "Collaborated with teams to fix bugs and guide end-users on software usage.",
-      "Enabled effective worktime management through attendance tracking features."
+      "Successfully mapped complex production traceability workflow (truy xuất nguồn gốc) required for export standards at Haca Seafood.",
+      "Unified Sales, Inventory, and Accounting modules compliant with Circular 200 (TT200) for 4+ enterprises.",
+      "Overcame user resistance in traditional environments by designing role-based training programs and simplified user manuals.",
+      "Created Business Blueprint Documents (BBD) and Software Requirement Specifications (SRS) for all projects."
     ]
   }
 ];
@@ -84,57 +76,74 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
 export const PROJECTS_DATA: ProjectItem[] = [
   {
     id: 'p1',
-    title: "Viettel Enterprise Support System (vESS)",
-    category: "SaaS Platform",
-    problem: "SMEs needed a compliant enterprise management platform that aligned with Circular 88 and Circular 200 while being easy to adopt.",
-    solution: "Gathered requirements, created SRS, and conducted user training workshops to reduce resistance to adoption.",
-    outcome: "Connected sales, inventory, accounting, and HR, significantly reducing manual work and human errors for end clients.",
-    tags: ["SaaS", "Compliance", "SRS", "Training"]
+    title: "AI Camera System for Access Control & Security",
+    category: "AI/IoT Security",
+    problem: "Banks and offices needed advanced access control with AI-powered face recognition and license plate detection under various conditions.",
+    solution: "Developed FaceID and LPR system integrated with barrier gates, implemented multi-layer security for bank vaults with door sensors.",
+    outcome: "Deployed real-time alert system with Multi-Factor Authentication, strict monitoring of vault opening/closing procedures.",
+    tags: ["Computer Vision", "IoT", "SQL", "Real-time Alert", "FaceID", "LPR"]
   },
   {
     id: 'p2',
-    title: "QD.Tek Odoo ERP Implementation",
-    category: "ERP Optimization",
-    problem: "The client needed to optimize management time and ensure report generation compliance (TT200) for technology equipment trading.",
-    solution: "Developed Business Blueprint (BBD), managed full development lifecycle, and provided specialized training for headquarters and branches.",
-    outcome: "Improved customer relationship management and aligned operations with industry tax and accounting standards.",
-    tags: ["Odoo", "BBD", "Trading", "Process Mapping"]
+    title: "BA Workflow Optimization with Generative AI",
+    category: "Process Automation",
+    problem: "Manual conversion of meeting minutes to technical documentation (SRS, BRD, User Stories) was time-consuming and inconsistent.",
+    solution: "Created standardized Prompt Library for auto-generating documentation, leveraged Gen AI for comprehensive mock data generation.",
+    outcome: "Reduced SRS documentation time by 40%, improved UAT process with edge-case coverage.",
+    tags: ["Gen AI", "Prompt Engineering", "SRS", "BRD", "UAT"]
   },
   {
     id: 'p3',
-    title: "DMS for Coconut Processing",
-    category: "Sales Optimization",
-    problem: "Need to optimize the sales process for company branches and distributors, and manage sales rep attendance.",
-    solution: "Implemented a Distribution Management System (DMS) with auto-sync features and comprehensive testing scenarios.",
-    outcome: "Streamlined sales processes and enabled real-time supervisor monitoring of sales representative attendance.",
-    tags: ["DMS", "Testing", "Sales", "Mobile App"]
+    title: "Accounting & Warehouse Automation",
+    category: "Data Integration",
+    problem: "Two disparate systems with no centralized Master Data; vendor product names differed from internal records causing manual bottlenecks.",
+    solution: "Engineered Fuzzy Matching Algorithm for product mapping, designed auto-workflow for product code selection/generation.",
+    outcome: "Optimized operational workload by 70%, ensured real-time consistency between Inventory and Accounting.",
+    tags: ["Fuzzy Matching", "Data Mapping", "Automation", "Workflow Design"]
+  },
+  {
+    id: 'p4',
+    title: "CMC In-house Core ERP System",
+    category: "ERP Development",
+    problem: "Fragmented legacy software couldn't address specific business challenges; needed unified system from scratch.",
+    solution: "Designed Database Schema for cross-functional data flows, integrated Gen AI APIs for support ticket summarization.",
+    outcome: "Increased order processing speed by 30% by eliminating redundant manual data entry.",
+    tags: ["ERP", "Database Design", "Gen AI", "System Integration"]
+  },
+  {
+    id: 'p5',
+    title: "Odoo ERP Implementation (Multi-Industry)",
+    category: "ERP Optimization",
+    problem: "Clients across seafood processing, automotive, tech trading, and spa industries needed compliant ERP solutions (TT200).",
+    solution: "Mapped production traceability workflows, unified Sales/Inventory/Accounting modules, designed role-based training programs.",
+    outcome: "Successfully implemented for 4+ enterprises with full compliance to Circular 200 standards.",
+    tags: ["Odoo", "TT200", "Traceability", "Change Management", "Training"]
   }
 ];
 
 export const SKILLS_DATA: SkillItem[] = [
-  // Analysis
-  { name: "Requirement Gathering (BRD/SRS)", level: 95, category: "Analysis" },
-  { name: "Process Modeling (BPMN/UML)", level: 85, category: "Analysis" },
-  { name: "UAT & Quality Assurance", level: 85, category: "Analysis" },
-  { name: "Business Process Improvement", level: 90, category: "Analysis" },
+  // Business Analysis & ERP
+  { name: "ERP Implementation & Optimization (Odoo)", level: 95, category: "Analysis" },
+  { name: "Business Process Re-engineering (BPR)", level: 90, category: "Analysis" },
+  { name: "Requirement Elicitation (BRD/SRS/User Stories)", level: 95, category: "Analysis" },
+  { name: "Gap Analysis & Solution Design", level: 90, category: "Analysis" },
 
-  // Technical
-  { name: "Odoo ERP Implementation", level: 90, category: "Technical" },
-  { name: "SQL (Basic) for Data Analysis", level: 60, category: "Technical" },
-  { name: "System Integration", level: 80, category: "Technical" },
+  // Data & System Integration
+  { name: "Data Mapping & Synchronization", level: 85, category: "Technical" },
+  { name: "System Integration (API & Database)", level: 85, category: "Technical" },
+  { name: "Data Privacy & Compliance", level: 80, category: "Technical" },
+  { name: "SQL (Basic/Intermediate)", level: 70, category: "Technical" },
 
-  // Tools (Requested additions)
-  { name: "Bizagi Modeler", level: 85, category: "Tools" },
-  { name: "Data Grid", level: 80, category: "Tools" },
-  { name: "AI Application", level: 75, category: "Tools" },
-  { name: "Microsoft Ecosystem", level: 90, category: "Tools" },
+  // Tools & Technology
+  { name: "BPMN 2.0, Visio, Draw.io, Bizagi", level: 90, category: "Tools" },
   { name: "Jira & Confluence", level: 90, category: "Tools" },
-  { name: "Power BI / Tableau", level: 70, category: "Tools" },
+  { name: "Excel (Advanced)", level: 95, category: "Tools" },
+  { name: "AI Tools (ChatGPT, Gemini)", level: 85, category: "Tools" },
 
   // Soft Skills
-  { name: "Communication & Training", level: 90, category: "Soft Skills" },
-  { name: "Analytical Problem Solving", level: 90, category: "Soft Skills" },
-  { name: "Adaptability & Teamwork", level: 95, category: "Soft Skills" },
+  { name: "Stakeholder Management", level: 90, category: "Soft Skills" },
+  { name: "End-user Training & Knowledge Transfer", level: 95, category: "Soft Skills" },
+  { name: "Cross-functional Communication", level: 90, category: "Soft Skills" },
 ];
 
 export const TESTIMONIALS_DATA: TestimonialItem[] = [];
